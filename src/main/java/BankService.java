@@ -32,6 +32,7 @@ public class BankService {
      * @param amount the amount to be withdrawn.
      */
     public void withdraw(double amount){
+        //if amount taken out is greater than balance, don't withdraw otherwise withdraw
         if (amount > balance) System.out.println("Insuffiecent Funds.");
         else {
             balance -= amount;
